@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title> My Hobby </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@900&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/dot-luv/jquery-ui.css">
+    </head>
+    <body>
+        <div id="progressbarContainer">
+            <div id="progressbar"></div>
+        </div>
+        <header>
+            Programming
+            <img src="img/menu.png" id="rightSideMenu" class="icon" alt="menu" onclick="changeMenu()">
+            <img src="img/down.png" id="dropBut" class="icon" alt="down but">
+            <div id="dropDownMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li>
+                        <a href="stats.html">Stats</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="menu">
+                <img src="img/close.png" class="icon" id="closeMenu" onclick="changeMenu()" alt="close button">
+                <ul>
+                    <li class="list">
+                        <a href="index.html">Home</a>
+                        <img src="img/dropdown.png" alt="dropdown" id="dropdown" onclick="dropdownHandler()">
+                        <ul id="sublistMenu">
+                            <li class="dropdownList"><a href="index.html#start">Start</a></li>
+                            <li class="dropdownList"><a href="index.html#first_program">First Program</a></li>
+                            <li class="dropdownList"><a href="index.html#unity">Unity</a></li>
+                            <li class="dropdownList"><a href="index.html#attempts">Attempts</a></li>
+                            <li class="dropdownList"><a href="index.html#contacts">Dontacts</a></li>
+                        </ul>
+                    </li>
+                    <li class="list"><a href="gallery.html">Gallery</a></li>
+                    <li class="list">
+                        <a href="stats.html">Stats</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <article>
+            <section id="start">
+                <div>
+                    <h6> 01 </h6>
+                    <h2> Programming </h2>
+                    <p>I think there is only one hobby that can make me happy, and this hobby is Programming.
+                    <br>
+                    cout &gt;&gt; "Hello world!";
+                </div>
+                <div>
+                    <img src="img/words.png" id="words" alt="words">
+                </div>
+            </section>
+
+            <section id="first_program">
+                <div>
+                    <h6> 02 </h6>
+                    <h2> First Program </h2>
+                    <p>Every summer, my brother and I went to my grandmother's country house. One evening my brother had an interesting idea. There are closed channels/chats in the telegram and links to these channels looked like this: https://t.me/joinchat/AAAAA {17 random characters of the upper and lower case English alphabet + digits} we also noticed that when these links opened through the browser, the working link opens several times slower than the non-working one. On this basis, we decided to make a bot in the python programming language, which will randomly iterate (bruteforce) links to closed channels.</p>
+                </div>
+                <div>
+                    It was my first python program that my brother and I wrote on the phone. After a few days, the search became a little more difficult due to the addition of -_ to random characters, but in any case, we added multithreading and ran this bot for several days to find something. The results are obviously fail because of 64^17 variations of link XD<br>
+                    <img src="img/firstProgram.png" alt="my first program"> <br>
+                    Code was shortened by chatGPT to input here and too long time passed that why big chance that this code out of date and doesn't work anymore
+                </div>
+            </section>
+
+            <section id="unity">
+                <div>
+                    <h6> 03 </h6>
+                    <h2> Unity </h2>
+                    <p>The next step was web programming, but after a few hours of reading html+css, I decided that it wasn't mine, I stayed to write code in python and still on the phone, because at that time I didn't have a computer yet. I took up a bit of modding for minecraft and a few months later my parents, following the example of friends, decided to send me to courses on game development on Unity. I quite enjoyed making games on this engine, but after some abandoned projects due to lack of resources, I had to return to python. Then there were more attempts to return to GameDev, but all failed:(</p>
+                </div>
+                <div id="unityRight">
+                    <img src="img/game1.jpg" alt="my game 1"><br>
+                    This is menu in the game Callisto for phones <br> <br>
+                    <img src="img/game2.jpg" alt="my game 2"> <br>
+                    This is procedural generated galaxy
+                </div>
+            </section>
+
+            <section id="attempts">
+                <div>
+                    <h6> 04 </h6>
+                    <h2> Attempts </h2>
+                    <p>From that moment on, my attempts to find a niche suitable for me in programming began. After several years of development, not surprisingly, my choice fell on python, simply because there was more practical use in it. There was a time when I did all kinds of bots/python programs all day long, because I had to solve some kind of one-time problems, either quickly or in the short term. Python is the best choice for such tasks because of the high speed of writing code and its compactness. There were many attempts to leave for GameDev, but at the last one I concluded for myself that it was not mine and decided that I would return there only if I worked, or if I was called to the project.</p>
+                </div>
+                <div>
+                    <img src="img/code2.png" alt="my code">
+                     I haven't been particularly involved in creating applications for android, but I think it can be quite suitable for itself. Creating websites, always shunned this topic, there was no desire. There were also many attempts to get into BigData and AI, but the lack of knowledge from higher mathematics put a barrier. And so it turned out that software development has become my hobby for several years
+                </div>
+            </section>
+
+            <section id="contacts">
+                <div id="contactsLeft">
+                    <h6> 05 </h6>
+                    <h2> Contacts </h2>
+                    <p> Leave here your contacts </p>
+                </div>
+                <form action="odbierz.php" method="post">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+                    <span id="bdContact">
+                        <label for="day">Day</label>
+                        <label for="month">Month</label>
+                        <label for="year">Year</label>
+                    </span>
+                    <div>
+                        <input type="text" id="day" name="day" placeholder="Day" size="4"  value="1" maxlength="2">
+                        <select id="month" name="month">
+                            <option value="january">January</option>
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                            <option value="april">April</option>
+                            <option value="may">May</option>
+                            <option value="june">June</option>
+                            <option value="july">July</option>
+                            <option value="august">August</option>
+                            <option value="september">September</option>
+                            <option value="october">October</option>
+                            <option value="november">November</option>
+                            <option value="december">December</option>
+                        </select>
+                        <input type="text" id="year" name="year" placeholder="Year"  value="2023" size="4" maxlength="4">
+                    </div>
+
+                    Sex:
+                    <div>
+                        <input type="radio" id="male" name="sex" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="sex" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other" name="sex" value="other">
+                        <label for="other">Other</label>
+                    </div>
+
+                    I have:
+                    <div>
+                        <input type="checkbox" id="dog" name="animals" value="Dog">
+                        <label for="dog"> Dog</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cat" name="animals" value="Cat">
+                        <label for="cat"> Cat</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="monkey" name="animals" value="Monkey">
+                        <label for="monkey"> Monkey</label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit" class="formButton">
+                        <input type="reset" value="Reset" class="formButton">
+                    </div>
+                    </form>
+            </section>
+        </article>
+
+        <footer>
+            <div id="footerRows">
+                <a href="#start" class="footerCols">
+                    <div>
+                        start
+                    </div>
+                    <div>
+                        <hr id="hrStart">
+                    </div>
+                </a>
+                <a href="#first_program" class="footerCols">
+                    <div>
+                        first program
+                    </div>
+                    <div>
+                        <hr id="hrFirstProgram">
+                    </div>
+                </a>
+                <a href="#unity" class="footerCols">
+                    <div>
+                        unity
+                    </div>
+                    <div>
+                        <hr id="hrUnity">
+                    </div>
+                </a>
+                <a  href="#attempts" class="footerCols">
+                    <div>
+                        attempts
+                    </div>
+                    <div>
+                        <hr id="hrAttempts">
+                    </div>
+                </a>
+                <a href="#contacts" class="footerCols">
+                    <div>
+                        contacts
+                    </div>
+                    <div>
+                        <hr id="hrContacts">
+                    </div>
+                </a>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

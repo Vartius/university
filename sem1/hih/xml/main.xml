@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root SYSTEM "main.dtd">
+<root
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="main.xsd">
+    <languages>
+        <language name="Python" paradigm="Multi-paradigm">
+            <books>
+                <book title="Fluent Python" author="Luciano Ramalho">
+                    <info>
+                        <publicationDate>2022-03-31</publicationDate>
+                        <pages>1014</pages>
+                        <description>Don't waste time bending Python to fit patterns you've learned in other languages. Python's simplicity lets you become productive quickly, but often this means you aren't using everything the language has to offer. With the updated edition of this hands-on guide, you'll learn how to write effective, modern Python 3 code by leveraging its best ideas.
+
+Discover and apply idiomatic Python 3 features beyond your past experience. Author Luciano Ramalho guides you through Python's core language features and libraries and teaches you how to make your code shorter, faster, and more readable.
+
+Complete with major updates throughout, this new edition features five parts that work as five short books within the book:
+
+Data structures: Sequences, dicts, sets, Unicode, and data classes
+Functions as objects: First-class functions, related design patterns, and type hints in function declarations
+Object-oriented idioms: Composition, inheritance, mixins, interfaces, operator overloading, protocols, and more static types
+Control flow: Context managers, generators, coroutines, async/await, and thread/process pools
+Metaprogramming: Properties, attribute descriptors, class decorators, and new class metaprogramming hooks that replace or simplify metaclasses</description>
+                        <links>
+                            <link>https://github.com/fluentpython</link>
+                            <link>https://www.fluentpython.com/</link>
+                            <link>https://books.google.pl/books/about/Fluent_Python.html?id=ICdnEAAAQBAJ</link>
+                        </links>
+                        <photos>
+                            <photoLink>https://books.google.pl/books/publisher/content?id=ICdnEAAAQBAJ&amp;printsec=frontcover&amp;img=1</photoLink>
+                        </photos>
+                    </info>
+                    <authorData>
+                        <githubPage>https://github.com/ramalho</githubPage>
+                        <email>luciano@ramalho.org</email>
+                    </authorData>
+                </book>
+            </books>
+        </language>
+        <language name="C#" paradigm="Multi-paradigm">
+            <books>
+                <book title="C# in Depth" author="Jon Skeet">
+                    <info>
+                        <publicationDate>2019-03</publicationDate>
+                        <pages>528</pages>
+                        <description>Effective techniques and experienced insights to maximize your C# 6 and 7 programming skills
+
+Key Features
+
+Written by C# legend and top StackOverflow contributor Jon Skeet
+Unlock the new features of C# 6 and 7
+Insights on the future of the C# language
+Master asynchronous functions, interpolated strings, tuples, and more
+
+Purchase of the print book includes a free eBook in PDF, Kindle, and ePub formats from Manning Publications.
+
+”An excellent overview of C# with helpful and realistic examples that make learning the newest features of C# easy.” —Meredith Godar
+
+
+
+About The Book
+C# is the foundation of .NET development. New features added in C# 6 and 7 make it easier to take on big data applications, cloud-centric web development, and cross-platform software using .NET Core. Packed with deep insight from C# guru Jon Skeet, this book takes you deep into concepts and features other C# books ignore.
+
+C# in Depth, Fourth Edition is an authoritative and engaging guide that reveals the full potential of the language, including the new features of C# 6 and 7. It combines deep dives into the C# language with practical techniques for enterprise development, web applications, and systems programming. As you absorb the wisdom and techniques in this book, you’ll write better code, and become an exceptional troubleshooter and problem solver.
+
+What You Will Learn
+
+Comprehensive guidance on the new features of C# 6 and 7
+Important legacies and greatest hits of C# 2–5
+Expression-bodied members
+Extended pass-by-reference functionality
+Writing asynchronous C# code
+String interpolation
+Composition with tuples
+Decomposition and pattern matching
+
+This Book Is Written For
+For intermediate C# developers.
+
+About The Author
+Jon Skeet is a senior software engineer at Google. He studied mathematics and computer science at Cambridge, is a recognized authority in Java and C#, and maintains the position of top contributor to Stack Overflow.
+
+Table of Contents
+
+1. Survival of the sharpest
+2. C# 2
+3. C# 3: LINQ and everything that comes with it
+4. C# 4: Improving interoperability
+5. Writing asynchronous code
+6. Async implementation
+7. C# 5 bonus features
+8. Super-sleek properties and expression-bodied members
+9. Stringy features
+10. A smörgåsbord of features for concise code
+11. Composition using tuples
+12. Deconstruction and pattern matching
+13. Improving efficiency with more pass by reference
+14. Concise code in C# 7
+15. C# 8 and beyond
+
+PART 1 C# IN CONTEXT
+
+PART 2 C# 2–5
+
+PART 3 C# 6
+
+PART 4 C# 7 AND BEYOND</description>
+                        <links>
+                            <link>https://books.google.pl/books/about/C_in_Depth.html?id=yEoZtAEACAAJ</link>
+                        </links>
+                        <photos>
+                            <photo>img/csharphindepth.jpg</photo>
+                        </photos>
+                    </info>
+                    <authorData>
+                        <email>skeet@pobox.com</email>
+                        <githubPage>https://github.com/jskeet</githubPage>
+                    </authorData>
+                </book>
+            </books>
+        </language>
+        <language name="JavaScript" paradigm="Multi-paradigm">
+            <books>
+                <book title="Eloquent JavaScript" author="Marijn Haverbeke">
+                    <info>
+                        <publicationDate>2018-12-04</publicationDate>
+                        <pages>472</pages>
+                        <description>Completely revised and updated, this best-selling introduction to programming in JavaScript focuses on writing real applications.
+
+JavaScript lies at the heart of almost every modern web application, from social apps like Twitter to browser-based game frameworks like Phaser and Babylon. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.
+
+This much anticipated and thoroughly revised third edition of Eloquent JavaScript dives deep into the JavaScript language to show you how to write beautiful, effective code. It has been updated to reflect the current state of Java¬Script and web browsers and includes brand-new material on features like class notation, arrow functions, iterators, async functions, template strings, and block scope. A host of new exercises have also been added to test your skills and keep you on track.
+
+As with previous editions, Haverbeke continues to teach through extensive examples and immerses you in code from the start, while exercises and full-chapter projects give you hands-on experience with writing your own programs. You start by learning the basic structure of the JavaScript language as well as control structures, functions, and data structures to help you write basic programs. Then you'll learn about error handling and bug fixing, modularity, and asynchronous programming before moving on to web browsers and how JavaScript is used to program them. As you build projects such as an artificial life simulation, a simple programming language, and a paint program, you'll learn how to:
+
+- Understand the essential elements of programming, including syntax, control, and data
+- Organize and clarify your code with object-oriented and functional programming techniques
+- Script the browser and make basic web applications
+- Use the DOM effectively to interact with browsers
+- Harness Node.js to build servers and utilities
+
+Isn't it time you became fluent in the language of the Web?
+
+* All source code is available online in an inter¬active sandbox, where you can edit the code, run it, and see its output instantly.</description>
+                        <links>
+                            <link>https://books.google.pl/books/about/Eloquent_JavaScript_3rd_Edition.html?id=p1v6DwAAQBAJ</link>
+                        </links>
+                        <photos>
+                            <photo>img/js.jpg</photo>
+                        </photos>
+                    </info>
+                    <authorData>
+                        <email>marijn@haverbeke.berlin</email>
+                        <githubPage>https://github.com/marijnh</githubPage>
+                    </authorData>
+                </book>
+            </books>
+        </language>
+        <language name="CSS" paradigm="StyleSheetLanguage">
+            <books>
+                <book title="CSS: The Definitive Guide" author="Eric A. Meyer, Estelle Weyl">
+                    <info>
+                        <publicationDate>2023</publicationDate>
+                        <pages>1126</pages>
+                        <description>If you're a web designer or app developer interested in sophisticated page styling, improved accessibility, and less time and effort expended, this book is for you. This revised fifth edition provides a comprehensive guide to CSS implementation along with a thorough review of the latest CSS specifications.
+
+Authors Eric Meyer and Estelle Weyl show you how to improve user experience, speed development, avoid potential bugs, and add life and depth to your applications through layout, transitions and animations, borders, backgrounds, text properties, and many other tools and techniques. We read the specs so you don't have to!
+
+This guide covers:
+
+Selectors, specificity, and the cascade, including information on the new cascade layers
+New and old CSS values and units, including CSS variables and ways to size based on viewports
+Details on font technology and ways to use any available font variants
+Text styling, from basic decoration to changing the entire writing mode
+Padding, borders, outlines, and margins, now discussed in terms of the new block- and inline-direction layout paradigm used by modern browsers
+Colors, backgrounds, and gradients, including the conic gradients
+Accessible data tables
+Flexible box and grid layout systems, including new subgrid capabilities
+2D and 3D transforms, transitions, and animation
+Filters, blending, clipping, and masking
+Media, feature, and container queries</description>
+                        <links>
+                            <link>https://books.google.pl/books/about/CSS_The_Definitive_Guide.html?id=HrHBEAAAQBAJ</link>
+                        </links>
+                        <photos>
+                            <photo>img/css.jpg</photo>
+                        </photos>
+                    </info>
+                    <authorData author="Eric A. Meyer">
+                        <githubPage>https://github.com/meyerweb</githubPage>
+                    </authorData>
+                    <authorData author="Estelle Weyl">
+                        <email>estelle@openwebdocs.org</email>
+                        <githubPage>https://github.com/estelle</githubPage>
+                    </authorData>
+                </book>
+            </books>
+        </language>
+        <language name="Assembly" paradigm="Low-levelProgramming">
+            <books>
+                <book title="Introduction to 80x86 Assembly Language and Computer Architecture" author="Richard C. Detmer">
+                    <info>
+                        <publicationDate>2014-02-17</publicationDate>
+                        <pages>348</pages>
+                        <description>A Revised and Updated Edition of the Authoritative Text This revised and updated Third Edition of the classic text guides students through assembly language using a hands-on approach, supporting future computing professionals with the basics they need to understand the mechanics and function of the computer’s inner workings. Through using real instruction sets to write real assembly language programs, students will become acquainted with the basics of computer architecture. 80x86 Assembly Language and Computer Architecture covers the Intel 80x86 using the powerful tools provided by Microsoft Visual Studio, including its 32- and 64-bit assemblers, its versatile debugger, and its ability to link assembly language and C/C++ program segments. The text also includes multiple examples of how individual 80x86 instructions execute, as well as complete programs using these instructions. Hands-on exercises reinforce key concepts and problem-solving skills. Updated to be compatible with Visual Studio 2012, and incorporating over a hundred new exercises, 80x86 Assembly Language and Computer Architecture: Third Edition is accessible and clear enough for beginning students while providing coverage of a rich set of 80x86 instructions and their use in simple assembly language programs. The text will prepare students to program effectively at any level. Key features of the fully revised and updated Third Edition include: • Updated to be used with Visual Studio 2012, while remaining compatible with earlier versions • Over 100 new exercises and programming exercises • Improved, clearer layout with easy-to-read illustrations • The same clear and accessibly writing style as previous editions • Full suite of ancillary materials, including PowerPoint lecture outlines, Test Bank, and answer keys • Suitable as a stand-alone text in an assembly language course or as a supplement in a computer architecture course</description>
+                        <links>
+                            <link>https://books.google.pl/books/about/Introduction_to_80x86_Assembly_Language.html?id=8qUdAwAAQBAJ</link>
+                        </links>
+                        <photos>
+                            <photo>img/assembly.jpg</photo>
+                        </photos>
+                    </info>
+                </book>
+            </books>
+        </language>
+    </languages>
+
+    <projects>
+        <project name="Tsouls" state="private">
+            <project-language>Python</project-language>
+            <description>script for downloading my set of programs for pentesting</description>
+            <links>
+                <link>https://github.com/YanPek/Tsouls</link>
+            </links>
+            <photos>
+                <photo>img/Tsouls.jpg</photo>
+            </photos>
+            <isDone>true</isDone>
+        </project>
+
+        <project name="Loading" state="private">
+            <project-language>Python</project-language>
+            <description>my python library for console loading animation</description>
+            <links>
+                <link>https://github.com/YanPek/loading</link>
+            </links>
+            <photos>
+                <photo>img/loading.jpg</photo>
+            </photos>
+            <isDone>true</isDone>
+        </project>
+
+        <project name="PeoplesGen" state="public">
+            <project-language>Python</project-language>
+            <description>Simple script for generating fake data</description>
+            <links>
+                <link>https://github.com/YanPek/PeoplesGen</link>
+            </links>
+            <photos>
+                <photo>img/PeoplesGen.jpg</photo>
+            </photos>
+            <isDone>true</isDone>
+        </project>
+        <project name="TgTradingX" state="private">
+            <project-language>Python</project-language>
+            <description>Script for trading and simulating trading using global trading platform</description>
+            <links>
+                <link>https://github.com/YanPek/TgTradingX</link>
+            </links>
+            <photos>
+                <photo>img/TgTradingX.jpg</photo>
+            </photos>
+            <isDone>true</isDone>
+        </project>
+    </projects>
+
+    <systems>
+        <system name="Binary">
+            <number> 2 </number>
+            <description> A binary number is a number expressed in the base-2 numeral system or binary numeral system, a method of mathematical expression which uses only two symbols: typically "0" (zero) and "1" (one).
+The base-2 numeral system is a positional notation with a radix of 2. Each digit is referred to as a bit, or binary digit. Because of its straightforward implementation in digital electronic circuitry using logic gates, the binary system is used by almost all modern computers and computer-based devices, as a preferred system of use, over various other human techniques of communication, because of the simplicity of the language and the noise immunity in physical implementation.[1]
+Negative numbers are commonly represented in binary using two's complement.</description>
+            <links>
+                <link>https://en.wikipedia.org/wiki/Binary_number</link>
+            </links>
+        </system>
+        <system name="Octal">
+            <number> 8 </number>
+            <description>The octal, or oct for short, is the base-8 positional numeral system, and uses the digits 0 to 7. This is to say that 10octal represents eight and 100octal represents sixty-four. However, English, like most languages, uses a base-10 number system, hence a true octal system might use different vocabulary.</description>
+            <links>
+                <link>https://en.wikipedia.org/wiki/Octal</link>
+            </links>
+        </system>
+        <system name="Decimal">
+            <number> 10 </number>
+            <description>The decimal numeral system (also called the base-ten positional numeral system and denary /ˈdiːnəri/[1] or decanary) is the standard system for denoting integer and non-integer numbers. It is the extension to non-integer numbers (decimal fractions) of the Hindu–Arabic numeral system.[citation needed] The way of denoting numbers in the decimal system is often referred to as decimal notation.[2]</description>
+            <links>
+                <link>https://en.wikipedia.org/wiki/Decimal</link>
+            </links>
+        </system>
+        <system name="Hexadecimal">
+            <number> 16 </number>
+            <description>In mathematics and computing, the hexadecimal (also base-16 or simply hex) numeral system is a positional numeral system that represents numbers using a radix (base) of sixteen. Unlike the decimal system representing numbers using ten symbols, hexadecimal uses sixteen distinct symbols, most often the symbols "0"–"9" to represent values 0 to 9, and "A"–"F" (or alternatively "a"–"f") to represent values from ten to fifteen.</description>
+            <links>
+                <link>https://en.wikipedia.org/wiki/Hexadecimal</link>
+            </links>
+        </system>
+    </systems>
+</root>

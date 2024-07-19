@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title> Stats </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@900&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="js/clock.js"></script>
+    </head>
+    <body>
+        <header>
+            Stats
+            <img src="img/menu.png" id="rightSideMenu" class="icon" alt="menu" onclick="changeMenu()">
+            <img src="img/down.png" id="dropBut" class="icon" alt="down but">
+            <div id="dropDownMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li>
+                        <a href="stats.html">Stats</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="menu">
+                <img src="img/close.png" class="icon" id="closeMenu" onclick="changeMenu()" alt="close button">
+                <ul>
+                    <li class="list">
+                        <a href="index.html">Home</a>
+                        <img src="img/dropdown.png" alt="dropdown" id="dropdown" onclick="dropdownHandler()">
+                        <ul id="sublistMenu">
+                            <li class="dropdownList"><a href="index.html#start">Start</a></li>
+                            <li class="dropdownList"><a href="index.html#first_program">First Program</a></li>
+                            <li class="dropdownList"><a href="index.html#unity">Unity</a></li>
+                            <li class="dropdownList"><a href="index.html#attempts">Attempts</a></li>
+                            <li class="dropdownList"><a href="index.html#contacts">Dontacts</a></li>
+                        </ul>
+                    </li>
+                    <li class="list"><a href="gallery.html">Gallery</a></li>
+                    <li class="list">
+                        <a href="stats.html">Stats</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <article id="stats">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+            width="100.000000pt" height="100.000000pt" viewBox="0 0 8000.000000 5334.000000"
+            preserveAspectRatio="xMidYMid meet" id="heart">
+                <g transform="translate(0.000000,5334.000000) scale(0.100000,-0.100000)"
+fill="#990000" stroke="none">
+<path d="M47925 44719 c-183 -12 -380 -35 -593 -70 -1866 -306 -3647 -1456
+-4924 -3179 -491 -663 -912 -1434 -1198 -2195 -29 -77 -56 -150 -61 -163 -8
+-21 -22 1 -107 170 -661 1300 -1567 2345 -2664 3075 -432 287 -939 547 -1395
+717 -1181 439 -2489 525 -3745 245 -505 -113 -1052 -296 -1413 -472 -1261
+-618 -2346 -1825 -2968 -3302 -774 -1841 -859 -4025 -250 -6430 527 -2085
+1549 -4242 2964 -6257 1779 -2532 4057 -4823 6974 -7009 581 -436 1428 -1023
+2055 -1426 527 -338 1412 -881 1560 -958 18 -9 30 -18 28 -21 -2 -2 -92 35
+-199 82 -335 148 -1427 615 -1839 787 -3111 1299 -5873 2286 -8275 2957 -3118
+871 -5865 1350 -8615 1502 -314 17 -1470 17 -1760 0 -1877 -112 -3361 -456
+-4626 -1072 -711 -346 -1265 -731 -1754 -1220 -565 -564 -950 -1180 -1195
+-1912 -176 -530 -257 -1067 -257 -1708 0 -309 9 -476 43 -775 153 -1364 684
+-2572 1607 -3653 158 -185 601 -629 792 -794 650 -561 1328 -1007 2170 -1427
+1234 -616 2579 -1055 4150 -1355 1320 -252 2673 -369 4085 -353 1148 13 2070
+96 3140 282 3717 646 7456 2101 11450 4455 1236 729 2638 1640 3855 2505 107
+76 202 138 210 138 8 0 182 -77 385 -170 713 -327 1324 -585 1985 -838 2499
+-958 4870 -1569 6960 -1794 1952 -210 3740 -85 5320 373 1272 368 2475 991
+3473 1799 424 342 880 797 1222 1217 545 668 988 1471 1239 2245 146 452 245
+966 288 1490 16 202 16 781 0 980 -88 1067 -388 2013 -900 2835 -373 598 -865
+1116 -1422 1499 l-105 72 -22 -28 c-13 -15 -23 -31 -23 -35 0 -3 48 -40 108
+-81 401 -278 820 -687 1127 -1102 349 -470 613 -985 810 -1580 497 -1496 423
+-3151 -204 -4573 -109 -248 -309 -620 -464 -867 -881 -1398 -2273 -2541 -3983
+-3270 -1359 -579 -2870 -864 -4584 -865 -1695 0 -3570 295 -5665 892 -1657
+472 -3414 1128 -5000 1868 -132 61 -248 114 -257 117 -10 3 -18 9 -18 13 0 4
+55 48 123 96 334 241 1060 782 1427 1063 525 402 894 702 1314 1071 1985 1741
+3679 3817 4980 6103 419 735 834 1568 1156 2322 971 2265 1545 4587 1729 6990
+42 549 46 652 46 1305 0 657 -5 797 -46 1280 -146 1735 -589 3318 -1286 4588
+-550 1004 -1265 1837 -2098 2444 -1137 828 -2450 1276 -4040 1378 -183 11
+-628 11 -820 -1z m1031 -598 c858 -91 1503 -248 2175 -530 1573 -658 2785
+-1922 3539 -3691 703 -1650 1000 -3669 855 -5800 -216 -3156 -1138 -6217
+-2728 -9059 -1354 -2422 -3153 -4588 -5317 -6402 -540 -453 -1521 -1196 -2573
+-1948 l-297 -213 -288 148 c-2068 1058 -4154 2385 -5952 3784 -2232 1737
+-4088 3561 -5611 5515 -1501 1925 -2609 3897 -3296 5865 -471 1351 -725 2562
+-794 3793 -15 268 -6 975 15 1227 80 933 262 1719 576 2476 549 1325 1480
+2411 2587 3018 526 288 1338 534 2063 625 283 36 451 45 775 45 329 0 479 -9
+765 -45 1587 -198 3076 -1060 4170 -2414 362 -448 676 -938 940 -1465 175
+-350 253 -530 490 -1140 89 -228 165 -418 169 -422 3 -4 44 128 90 295 143
+516 207 734 281 952 535 1576 1494 2949 2755 3947 1004 794 2140 1287 3305
+1433 229 29 342 33 730 30 301 -2 427 -8 576 -24z m-25690 -21881 c2583 -95
+5375 -534 8364 -1316 2962 -776 6024 -1822 9780 -3344 1452 -588 2061 -845
+2309 -975 119 -62 305 -157 414 -211 108 -54 197 -101 197 -105 0 -3 -98 -73
+-217 -156 -4702 -3250 -9234 -5378 -13459 -6318 -564 -126 -1314 -265 -1772
+-329 -1593 -224 -3308 -239 -5022 -45 -2550 288 -4793 1026 -6436 2115 -688
+457 -1298 1003 -1760 1579 -676 841 -1101 1813 -1259 2880 -75 503 -86 1102
+-29 1550 107 836 425 1567 963 2210 111 133 438 457 581 575 500 414 1055 741
+1741 1025 1213 502 2710 801 4329 864 308 12 961 12 1276 1z"/>
+</g>
+            </svg>
+
+            <table>
+                <tr>
+                    <th>Language</th>
+                    <th>Projects count</th>
+                    <th>Mood</th>
+                </tr>
+                <tr>
+                    <td><a href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a></td>
+                    <td>6</td>
+                    <td style="color:rgb(8, 229, 8);">:)</td>
+                </tr>
+                <tr>
+                    <td><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a></td>
+                    <td>27</td>
+                    <td style="color:rgb(8, 229, 8);">:)</td>
+                </tr>
+                <tr>
+                    <td><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a></td>
+                    <td>4</td>
+                    <td style="color:rgb(8, 229, 8);">:)</td>
+                </tr>
+                <tr>
+                    <td><a href="https://en.wikipedia.org/wiki/Unity_(game_engine)">C# (Unity)</a></td>
+                    <td>4</td>
+                    <td style="color:rgb(222, 229, 8);">:/</td>
+                </tr>
+                <tr>
+                    <td><a href="https://en.wikipedia.org/wiki/JavaScript">JS</a></td>
+                    <td>1</td>
+                    <td style="color:rgb(21, 0, 255);">0_0</td>
+                </tr>
+                <tr>
+                    <td><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></td>
+                    <td>8</td>
+                    <td style="color:rgb(214, 229, 8);">ok.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://en.wikipedia.org/wiki/Assembly_language">Assembly</a></td>
+                    <td>~0.7</td>
+                    <td style="color:rgb(229, 8, 8);">X_X</td>
+                </tr>
+              </table>
+        </article>
+        <div class="content">
+            <div class="timeDiv">
+                <span class="font-color" id="time"></span>
+                <span class="font-color" id="sec"></span>
+                <span class="font-color" id="med"></span>
+            </div>
+            <div class="dayDiv">
+                <span class="font-color day">SUN</span>
+                <span class="font-color day">MON</span>
+                <span class="font-color day">TUE</span>
+                <span class="font-color day">WED</span>
+                <span class="font-color day">THU</span>
+                <span class="font-color day">FRI</span>
+                <span class="font-color day">SAT</span>
+            </div>
+            <span class="font-color" id="full-date"></span>
+          </div>
+        <script src="js/stats.js"></script>
+    </body>
+</html>

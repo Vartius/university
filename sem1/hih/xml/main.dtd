@@ -1,0 +1,30 @@
+<!ELEMENT root (languages, projects, systems)>
+<!ATTLIST root xmlns:xsi CDATA #REQUIRED xsi:noNamespaceSchemaLocation CDATA #REQUIRED>
+<!ELEMENT languages (language+)>
+<!ELEMENT language (books)>
+<!ATTLIST language name CDATA #REQUIRED paradigm (Multi-paradigm | StyleSheetLanguage | Low-levelProgramming) "Multi-paradigm">
+<!ELEMENT books (book+)>
+<!ELEMENT book (info, authorData*)>
+<!ATTLIST book title CDATA #REQUIRED author CDATA #REQUIRED >
+<!ELEMENT info (publicationDate, pages, description, links, photos)>
+<!ELEMENT publicationDate (#PCDATA)>
+<!ELEMENT pages (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT links (link+)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT photos (photo*, photoLink*)>
+<!ELEMENT photo (#PCDATA)>
+<!ELEMENT photoLink (#PCDATA)>
+<!ELEMENT authorData ((email?|githubPage?), (email?|githubPage?))>
+<!ATTLIST authorData author CDATA #IMPLIED>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT githubPage (#PCDATA)>
+<!ELEMENT projects (project+)>
+<!ELEMENT project (project-language, description, links, photos, isDone)>
+<!ATTLIST project name CDATA #REQUIRED state (private | public) "private">
+<!ELEMENT isDone (#PCDATA)>
+<!ELEMENT project-language (#PCDATA)>
+<!ELEMENT systems (system+)>
+<!ELEMENT system (number, description, links)>
+<!ATTLIST system name CDATA #REQUIRED>
+<!ELEMENT number (#PCDATA)>

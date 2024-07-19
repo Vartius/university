@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="root" type="rootType"/>
+    <xs:complexType name="rootType">
+        <xs:sequence>
+            <xs:element name="languages" type="languagesType"/>
+            <xs:element name="projects" type="projectsType"/>
+            <xs:element name="systems" type="systemsType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="languagesType">
+        <xs:sequence>
+            <xs:element name="language" type="languageType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="languageType">
+        <xs:sequence>
+            <xs:element name="books" type="booksType"/>
+        </xs:sequence>
+        <xs:attribute ref="name"/>
+        <xs:attribute name="paradigm" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="booksType">
+        <xs:sequence>
+            <xs:element name="book" type="bookType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="bookType">
+        <xs:sequence>
+            <xs:element name="info">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="publicationDate" type="dateType"/>
+                        <xs:element name="pages" type="xs:integer"/>
+                        <xs:group ref="avgData"></xs:group>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="authorData" minOccurs="0" maxOccurs="unbounded"> 
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="email" minOccurs="0">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="\S*@\S*.\S*"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="githubPage" minOccurs="0">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="https:\/\/github.com\/\w*"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                    </xs:all>
+                    <xs:attribute name="author" use="optional"></xs:attribute>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="title" type="xs:string"/>
+        <xs:attribute name="author" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:simpleType name="dateType">
+        <xs:union>
+            <xs:simpleType>
+                <xs:restriction base="xs:date">
+                    <xs:pattern value="\d{4}-\d{2}-\d{2}"/>
+                    <xs:minInclusive value="1900-01-01"/>
+                    <xs:maxInclusive value="2023-12-31"/>
+                </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+                <xs:restriction base="xs:gYearMonth">
+                    <xs:pattern value="\d{4}-\d{2}"/>
+                    <xs:minInclusive value="1900-01"/>
+                    <xs:maxInclusive value="2023-12"/>
+                </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+                <xs:restriction base="xs:gYear">
+                    <xs:pattern value="\d{4}"/>
+                    <xs:minInclusive value="1900"/>
+                    <xs:maxInclusive value="2023"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:union>
+    </xs:simpleType>
+
+    <xs:complexType name="linksType">
+        <xs:sequence>
+            <xs:element name="link" type="urlType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="urlType">
+        <xs:restriction base="xs:anyURI">
+            <xs:pattern value="https:\/\/\S*"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="photosType">
+        <xs:choice>
+            <xs:element name="photo" type="photoType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="photoLink" type="photoLinkType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:simpleType name="photoLinkType">
+        <xs:restriction base="xs:anyURI">
+            <xs:pattern value="https:\/\/\S*"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="photoType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="img\/\S*.\S*"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="shortString">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="15"/>
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="privatePublic">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="public"/>
+            <xs:enumeration value="private"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="projectsType">
+        <xs:sequence>
+            <xs:element name="project" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="project-language" type="shortString"/>
+                        <xs:group ref="avgData"></xs:group>
+                        <xs:element name="isDone">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:boolean"/>
+                            </xs:simpleType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute ref="name"/>
+                    <xs:attribute name="state" type="privatePublic"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="numberSystemInt">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="systemsType">
+        <xs:sequence>
+            <xs:element name="system" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="number" type="numberSystemInt"/>
+                        <xs:group ref="avgData"></xs:group>
+                    </xs:sequence>
+                    <xs:attribute ref="name"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:group name="avgData">
+        <xs:sequence>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="links" type="linksType"/>
+            <xs:element name="photos" type="photosType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:attribute name="name">
+         <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[A-Z]\S*"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+</xs:schema>
