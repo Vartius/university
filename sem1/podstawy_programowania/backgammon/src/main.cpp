@@ -11,17 +11,9 @@ using namespace std;
 #define WHITE_PAIR 2
 #define SELECT_PAIR 4
 #define CORRECT_PAIR 5
-#define BAR_PAIR 6
+#define BAR_PAIR 6                                                                                                          \
+    
 
-#define DEFINE_MAIN                                                                                                               \
-    init();                                                                                                                       \
-    int ch = 0, row = 5, col = 6, state = 0, dices[2] = {0, 0}, activity = 0, queue = WHITE_PAIR, score[2] = {0, 0}, botMode = 0; \
-    Board desk[24], home[2], bar[2];                                                                                              \
-    Names names;                                                                                                                  \
-    initCheckers(desk, bar, home);
-
-#define ADDHOWRED addToHOF(names.redName, score[1]);
-#define ADDHOWWHITE addToHOF(names.whiteName, score[0]);
 struct Coords
 {
     int row;
@@ -1240,7 +1232,11 @@ void menuSC(int state, Board desk[24], Board home[2], Board bar[2], int dices[2]
 // activity 0 - menu, 1 - game, 2 - continue game
 int main()
 {
-    DEFINE_MAIN;
+    init();                                                                                                                       \
+    int ch = 0, row = 5, col = 6, state = 0, dices[2] = {0, 0}, activity = 0, queue = WHITE_PAIR, score[2] = {0, 0}, botMode = 0; \
+    Board desk[24], home[2], bar[2];                                                                                              \
+    Names names;                                                                                                                  \
+    initCheckers(desk, bar, home);
 
     do
     {
@@ -1273,8 +1269,8 @@ int main()
                 saveGameHistory(desk, home, bar, dices, queue, names);
             }
 
-            ADDHOWRED;
-            ADDHOWWHITE;
+            addToHOF(names.redName, score[1]);;
+            addToHOF(names.whiteName, score[0]);
 
             if (activity == 0)
             {
