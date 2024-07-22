@@ -4,3 +4,6 @@
 [submodule "sem2/oop/OOP-worldsim-cpp"]
 	path = sem2/oop/OOP-worldsim-cpp
 	url = git@github.com:Vartius/OOP-worldsim-cpp.git
+[submodule "sem2/oop/OOP-worldsim-java"]
+	path = sem2/oop/OOP-worldsim-java
+	url = git@github.com:Vartius/OOP-worldsim-java.git
