@@ -1,3 +1,6 @@
 [submodule "sem2/so/so-ls-cpp"]
 	path = sem2/so/so-ls-cpp
 	url = git@github.com:Vartius/so-ls-cpp.git
+[submodule "sem2/oop/OOP-worldsim-cpp"]
+	path = sem2/oop/OOP-worldsim-cpp
+	url = git@github.com:Vartius/OOP-worldsim-cpp.git
