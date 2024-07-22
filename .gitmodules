@@ -7,3 +7,6 @@
 [submodule "sem2/oop/OOP-worldsim-java"]
 	path = sem2/oop/OOP-worldsim-java
 	url = git@github.com:Vartius/OOP-worldsim-java.git
+[submodule "sem2/oop/OOP-worldsim-python"]
+	path = sem2/oop/OOP-worldsim-python
+	url = git@github.com:Vartius/OOP-worldsim-python.git
